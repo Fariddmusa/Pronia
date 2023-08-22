@@ -15,12 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pronia.DataAccess\Pronia.DataAccess.csproj" />
+    <Folder Include="Areas\AdminProniaDb\Data\" />
+    <Folder Include="Areas\AdminProniaDb\Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\AdminProniaDb\Data\" />
-    <Folder Include="Areas\AdminProniaDb\Models\" />
+    <ProjectReference Include="..\Pronia.Business\Pronia.Business.csproj" />
   </ItemGroup>
 
 </Project>
