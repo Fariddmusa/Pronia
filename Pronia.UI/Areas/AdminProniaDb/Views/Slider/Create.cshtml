@@ -20,22 +20,26 @@
                         <h5 class="card-title">Create:</h5>
 
                         <!-- Vertical Form -->
-                        <form method="post" class="row g-3">
+                        <form method="post" class="row g-3" enctype="multipart/form-data">
                             <div class="col-12">
                                 <label asp-for="IMageUrl" class="form-label">Image</label>
-                                <input asp-for="IMageUrl" class="form-control">
+                                <input asp-for="IMageUrl" accept="image/*" class="form-control">
+                                <span asp-validation-for="IMageUrl" class="text-danger"></span>
                             </div>
                             <div class="col-12">
                                  <label asp-for="Title" class="form-label"></label>
                                  <input asp-for="Title" class="form-control">
+                                 <span asp-validation-for="Title" class="text-danger"></span>
                             </div>
                             <div class="col-12">
                                  <label asp-for="Description" class="form-label"></label>
                                  <input asp-for="Description" class="form-control">
+                                 <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
                             <div class="col-12">
                                  <label asp-for="Discount" class="form-label"></label>
                                  <input asp-for="Discount" class="form-control">
+                                 <span asp-validation-for="Discount" class="text-danger"></span>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -48,4 +52,6 @@
         </div>
     </section>
 </main>
+
+
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Pronia.Business.ViewModels.SliderViewModels;
 
@@ -10,5 +11,5 @@ public class SliderPostVM
     public string Description { get; set; } = null!;
     public int Discount { get; set; }
     [Required]
-    public string IMageUrl { get; set; } = null!;
+    public IFormFile IMageUrl { get; set; } = null!;
 }
